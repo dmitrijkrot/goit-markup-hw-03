@@ -1,0 +1,203 @@
+:root {
+  
+    --white-color: #FFFFFF;
+    --header-title-color: #212121;
+    --primary-text-color: #757575;
+    --second-text-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196f3;
+    --first-accent-color: #000000;
+    
+    
+    --background-hero-footer-color: #2F303A;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .btn-bold {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    cursor: pointer;
+    background-color: var(--accent-color);
+  }
+  .btn-bold:hover, .btn-bold:focus {
+  color: var(--white-color);    
+  }
+  
+  .filter-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-title-color);
+    cursor: pointer;
+  }
+  .filter-button:hover, .filter-button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+  
+  /* ----------------------heder------------------- */
+  .logo-first {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+  
+  .logo-second {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--first-accent-color);
+  }
+  .menu-link.current {
+  color: var(--accent-color);
+  }
+  .menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+    color: var(--header-title-color);
+  }
+  
+  .adress-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+  .adress-link:focus, .adress-link:hover {
+    color: var(--accent-color);
+  }
+  .menu-link:hover, .menu-link:focus
+  {
+    color: var(--accent-color);
+  }
+  
+  /*---------------------hero-----------------------*/
+  .hero-main {
+    background-color: var(--background-hero-footer-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+  .filters {
+    display: none;
+  }
+  
+  .centr-title {
+    display: none;
+  }
+  .hero-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-title-color);
+  }
+  .hero-item-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+  .first-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-title-color);
+  }
+  
+  .about-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-title-color);
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+  /*-------------------projects------------------*/
+  .projects-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--header-title-color);
+  }
+  .project-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+  /*------------------footer------------------*/
+  
+  .footer-hero {
+      background-color: var(--background-hero-footer-color);
+  }
+  .footer-addres-item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+  }
+  
+  .footer-list {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+  }
+  
+  .logo-third {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+  }
+  
