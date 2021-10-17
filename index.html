@@ -1,72 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="header-logo link"href="#" lang="en"><span class="logo-first link">Web</span><span class="logo-second link">Studio</span></a>
+          <a class="header-logo link" href="#" lang="en"
+            ><span class="logo-first link">Web</span><span class="logo-second link">Studio</span></a
+          >
           <ul class="list menu-list">
-            <li class="menu-item"><a class="menu-link link" href="./studio.html">Студия</a></li>
-            <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu-item"><a class="menu-link link current" href="#">Студия</a></li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Портфолио</a>
+            </li>
             <li class="menu-item"><a class="menu-link link" href="#">Контакты</a></li>
           </ul>
         </nav>
         <ul class="list adress-list">
-          <li class="adress-item"><a class="adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="adress-item"><a class="adress-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="adress-item">
+            <a class="adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="adress-item">
+            <a class="adress-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
     <main>
       <section>
         <div class="hero-top">
-        <h1 class="hero-main">Эффективные решения для вашего бизнеса</h1>
-        <button class="main-btn btn-bold" type="button">Заказать услугу</button>
+          <div>
+            <h1 class="hero-main">Эффективные решения для вашего бизнеса</h1>
+          </div>
+          <div class="button-centr">
+            <button class="button btn-bold" type="button">Заказать услугу</button>
+          </div>
+        </div>
       </section>
-    </div>
       <section class="hero-centr">
-        <h2 class="centr-title">Наши принцыпы</h2>
-        <ul class="list hero-list">
-          <li class="hero-item">
-            <h3 class="hero-link link">Внимание к деталям</h3>
-            <p class="hero-item-text link">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-          </li>
-          <li class="hero-item">
-            <h3 class="hero-link link">Пунктуальность</h3>
-            <p class="hero-item-text link">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-          </li>
-          <li class="hero-item">
-            <h3 class="hero-link link">Планирование</h3>
-            <p class="hero-item-text link">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-          </li>
-          <li class="hero-item">
-            <h3 class="hero-link link">Современные технологии</h3>
-            <p class="hero-item-text link">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="centr-title">Наши принцыпы</h2>
+          <ul class="list hero-list">
+            <li class="hero-item">
+              <h3 class="hero-link link">Внимание к деталям</h3>
+              <p class="hero-item-text link">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="hero-item">
+              <h3 class="hero-link link">Пунктуальность</h3>
+              <p class="hero-item-text link">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="hero-item">
+              <h3 class="hero-link link">Планирование</h3>
+              <p class="hero-item-text link">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="hero-item">
+              <h3 class="hero-link link">Современные технологии</h3>
+              <p class="hero-item-text link">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="hero-first">
         <h2 class="first-title">Чем мы занимаемся</h2>
         <ul class="list first-list">
           <li class="first-item">
-            <img src="./images/img1.jpg" alt="Работа на клавиатуре" width="370" height="294"/>
+            <img src="./images/img1.jpg" alt="Работа на клавиатуре" width="370" height="294" />
           </li>
           <li class="first-item">
-            <img src="./images/img2.jpg" alt="Монитор" width="370" height="294"/>
+            <img src="./images/img2.jpg" alt="Монитор" width="370" height="294" />
           </li>
           <li class="first-item">
-            <img src="./images/img3.jpg" alt="Планшет" width="370" height="294"/>
+            <img src="./images/img3.jpg" alt="Планшет" width="370" height="294" />
           </li>
         </ul>
       </section>
@@ -74,22 +105,27 @@
         <h2 class="about first-title">Наша команда</h2>
         <ul class="list about-list">
           <li class="about-item">
-            <img src="./images/ИгорьДемьяненко.jpg" alt="Игорь Демьяненко" width="270" height="260"/>
+            <img
+              src="./images/ИгорьДемьяненко.jpg"
+              alt="Игорь Демьяненко"
+              width="270"
+              height="260"
+            />
             <h3 class="about-title">Игорь Демьяненко</h3>
             <p class="about-text" lang="en">Product Designer</p>
           </li>
           <li class="about-item">
-            <img src="./images/ОльгаРепина.jpg" alt="Ольга Репина" width="270" height="260"/>
+            <img src="./images/ОльгаРепина.jpg" alt="Ольга Репина" width="270" height="260" />
             <h3 class="about-title">Ольга Репина</h3>
             <p class="about-text" lang="en">Frontend Developer</p>
           </li>
           <li class="about-item">
-            <img src="./images/НиколайТарасов.jpg" alt="Николай Тарасов" width="270" height="260"/>
+            <img src="./images/НиколайТарасов.jpg" alt="Николай Тарасов" width="270" height="260" />
             <h3 class="about-title">Николай Тарасов</h3>
             <p class="about-text" lang="en">Marketing</p>
           </li>
           <li>
-            <img src="./images/МихаилЕрмаков.jpg" alt="Михаил Ермаков" width="270" height="260"/>
+            <img src="./images/МихаилЕрмаков.jpg" alt="Михаил Ермаков" width="270" height="260" />
             <h3 class="about-title">Михаил Ермаков</h3>
             <p class="about-text" lang="en">UI Designer</p>
           </li>
@@ -97,11 +133,19 @@
       </section>
     </main>
     <footer class="footer-hero">
-      <a class="link" href="#" lang="en"><span class="logo-first">Web</span><span class="logo-third">Studio</span></a>
+      <a class="link" href="#" lang="en"
+        ><span class="logo-first">Web</span><span class="logo-third">Studio</span></a
+      >
       <address class="address">
         <ul class="footer-adres list">
           <li class="footer-item">
-            <a class="footer-addres-item link" href="https://goo.gl/maps/7NXjb8yNVrLGPsfN6" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            <a
+              class="footer-addres-item link"
+              href="https://goo.gl/maps/7NXjb8yNVrLGPsfN6"
+              target="_blank"
+              rel="noopener noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
           </li>
           <li class="footer-item">
             <a class="footer-list link" href="mailto:info@example.com">info@example.com</a>

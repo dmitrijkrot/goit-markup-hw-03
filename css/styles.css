@@ -10,6 +10,7 @@
     
     --background-hero-footer-color: #2F303A;
   }
+
   p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
@@ -22,6 +23,10 @@
   button {
     cursor: pointer;
   }
+
+  img {
+    display: block;
+}
 
   body {
     font-family: 'Roboto', sans-serif;
@@ -49,11 +54,16 @@
     font-size: 16px;
     line-height: 1.86;
     background-color: var(--accent-color);
-    align-items: center;
-    text-align: center;
+    align-items:center;
+    text-align:center;
     letter-spacing: 0.06em;
     color: var(--white-color);
-    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    margin-top: 30px;
+    margin-bottom: 200px;
   }
 
   .btn-bold:hover, .btn-bold:focus {
@@ -86,11 +96,13 @@
     display: flex;
     align-items: center;
   }
+
   .header-logo {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
+
   .logo-first {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -108,10 +120,11 @@
     letter-spacing: 0.03em;
     color: var(--first-accent-color);
   }
+
   .menu-item {
     display: flex;
   }
-
+  
   .menu-item:not(:last-child) {
     margin-right: 50px;
   }
@@ -159,10 +172,10 @@
   
   /*---------------------hero-----------------------*/
   .hero-top {
-    color: var(--background-hero-footer-color);
-  }
-  .hero-main {
     background-color: var(--background-hero-footer-color);
+  }
+  
+  .hero-main {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -170,6 +183,11 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    padding-top: 200px;
+  }
+
+  .button-centr {
+    text-align: center
   }
   .filters {
     display: none;
@@ -178,6 +196,7 @@
   .centr-title {
     display: none;
   }
+
   .hero-link {
     font-weight: 700;
     font-size: 14px;
@@ -186,12 +205,14 @@
     text-transform: uppercase;
     color: var(--header-title-color);
   }
+
   .hero-item-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
   }
+
   .first-title {
     font-weight: 700;
     font-size: 36px;
@@ -217,6 +238,7 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
   }
+
   /*-------------------projects------------------*/
   .projects-title {
     font-weight: 700;
@@ -225,6 +247,7 @@
     letter-spacing: 0.06em;
     color: var(--header-title-color);
   }
+
   .project-text {
     font-size: 16px;
     line-height: 1.88;
@@ -236,6 +259,7 @@
   .footer-hero {
       background-color: var(--background-hero-footer-color);
   }
+  
   .footer-addres-item {
     font-style: normal;
     font-size: 14px;
