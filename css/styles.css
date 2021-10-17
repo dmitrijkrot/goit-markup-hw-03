@@ -10,11 +10,31 @@
     
     --background-hero-footer-color: #2F303A;
   }
-  
+  p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
   body {
     font-family: 'Roboto', sans-serif;
   }
-  
+
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .list {
     list-style: none;
   }
@@ -28,14 +48,14 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.86;
-    display: flex;
+    background-color: var(--accent-color);
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-color);
     cursor: pointer;
-    background-color: var(--accent-color);
   }
+
   .btn-bold:hover, .btn-bold:focus {
   color: var(--white-color);    
   }
@@ -50,12 +70,27 @@
     color: var(--header-title-color);
     cursor: pointer;
   }
+
   .filter-button:hover, .filter-button:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
   }
   
   /* ----------------------heder------------------- */
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
   .logo-first {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -73,9 +108,22 @@
     letter-spacing: 0.03em;
     color: var(--first-accent-color);
   }
+  .menu-item {
+    display: flex;
+  }
+
+  .menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
   .menu-link.current {
   color: var(--accent-color);
   }
+
+  .menu-list {
+    display: flex;
+  }
+  
   .menu-link {
     font-weight: 500;
     font-size: 14px;
@@ -91,8 +139,18 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
   }
+  
+  .adress-item:not(:first-child) {
+    margin-left: 50px;
+  }
+  
   .adress-link:focus, .adress-link:hover {
     color: var(--accent-color);
+  }
+
+  .adress-list {
+    display: flex;
+    margin-left: auto;
   }
   .menu-link:hover, .menu-link:focus
   {
@@ -100,6 +158,9 @@
   }
   
   /*---------------------hero-----------------------*/
+  .hero-top {
+    color: var(--background-hero-footer-color);
+  }
   .hero-main {
     background-color: var(--background-hero-footer-color);
     font-weight: 900;
