@@ -5,9 +5,9 @@
     --primary-text-color: #757575;
     --second-text-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196f3;
+    --focus-hover-color: #188CE8;
     --first-accent-color: #000000;
-    
-    
+    --about-us-color: #F5F4FA;
     --background-hero-footer-color: #2F303A;
   }
 
@@ -63,11 +63,11 @@
     border: none;
     padding: 10px 32px;
     margin-top: 30px;
-    margin-bottom: 200px;
   }
 
   .btn-bold:hover, .btn-bold:focus {
-  color: var(--white-color);    
+  color: var(--white-color);
+  background-color: var(--focus-hover-color)
   }
   
   .filter-button {
@@ -79,6 +79,10 @@
     letter-spacing: 0.03em;
     color: var(--header-title-color);
     cursor: pointer;
+    background-color:var(--about-us-color);
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
   }
 
   .filter-button:hover, .filter-button:focus {
@@ -173,17 +177,20 @@
   /*---------------------hero-----------------------*/
   .hero-top {
     background-color: var(--background-hero-footer-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   
   .hero-main {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
-    padding-top: 200px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
   .button-centr {
@@ -197,8 +204,21 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+
   .centr-title {
     display: none;
+  }
+
+  .centr-list-container {
+    display: flex;
+  }
+  .hero-item {
+    width: 270px;
+    height: 2.67;
+  }
+
+  .hero-item:not(:last-child) {
+    margin-right: 30px;
   }
 
   .hero-link {
@@ -208,6 +228,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--header-title-color);
+    margin-bottom: 10px;
   }
 
   .hero-item-text {
@@ -215,6 +236,12 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+  }
+
+  .about-us-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--about-us-color)
   }
 
   .first-title {
@@ -225,7 +252,6 @@
     letter-spacing: 0.03em;
     color: var(--header-title-color);
     margin-bottom: 50px;
-    
   }
   
   .first-list {
@@ -234,8 +260,25 @@
 
   .first-item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 94px;
   }
 
+  .about-list {
+    display: flex;
+  }
+
+  .about-item {
+    display: flex;
+  }
+
+  .about-item-container {
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .about-item:not(:last-child) {
+    margin-right: 30px
+  }
   .about-title {
     font-weight: 500;
     font-size: 16px;
@@ -243,6 +286,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-title-color);
+    padding-top: 30px;
   }
   
   .about-text {
@@ -251,15 +295,68 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   /*-------------------projects------------------*/
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .filter-button.current {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+
+  .filter {
+    display: flex;
+    justify-content: center;
+  }
+
+  .filters-container {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .filter-item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+
+  }
+
+  .project-item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .project-item {
+    margin-bottom: 30px;
+  }
+
+  .project-item {
+  background: var(--white-color);
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+
+  }
+
   .projects-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--header-title-color);
+    margin-top: 20px;
+    margin-left: 24px;
   }
 
   .project-text {
@@ -267,6 +364,9 @@
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-top: 4px;
+    margin-left: 24px;
+    margin-bottom: 20px;
   }
   /*------------------footer------------------*/
   
@@ -274,6 +374,15 @@
       background-color: var(--background-hero-footer-color);
   }
   
+  .footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .logo-footer-container {
+    margin-bottom: 20px;
+  }
+
   .footer-addres-item {
     font-style: normal;
     font-size: 14px;
@@ -282,6 +391,10 @@
     color: var(--white-color);
   }
   
+  .footer-item:not(:last-child) {
+margin-bottom: 9px;
+  }
+
   .footer-list {
     font-style: normal;
     font-size: 14px;
