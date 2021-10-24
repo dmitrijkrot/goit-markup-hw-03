@@ -25,6 +25,8 @@
   }
 
   img {
+    max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -44,7 +46,7 @@
     list-style: none;
   }
   
-  .link {
+  a {
     text-decoration: none;
   }
   
@@ -94,6 +96,7 @@
   .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px;
   }
   
   .header-nav {
@@ -107,21 +110,19 @@
     padding-bottom: 25px;
   }
 
-  .logo-first {
+  .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+  }
+
+  .logo-first {
     color: var(--accent-color);
   }
   
   .logo-second {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--first-accent-color);
   }
 
@@ -175,10 +176,11 @@
   }
   
   /*---------------------hero-----------------------*/
-  .hero-top {
+  .hero {
     background-color: var(--background-hero-footer-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
   }
   
   .hero-main {
@@ -193,35 +195,31 @@
     text-transform: uppercase;
   }
 
-  .button-centr {
-    text-align: center
-  }
-  .filters {
-    display: none;
-  }
-  
-  .hero-centr {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
-  .centr-title {
-    display: none;
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
   }
 
-  .centr-list-container {
+  .advantage {
     display: flex;
   }
-  .hero-item {
+  .advantage-item {
     width: 270px;
-    height: 2.67;
   }
 
-  .hero-item:not(:last-child) {
+  .advantage-item:not(:last-child) {
     margin-right: 30px;
   }
 
-  .hero-link {
+  .advantage-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -231,20 +229,22 @@
     margin-bottom: 10px;
   }
 
-  .hero-item-text {
+  .advantage-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
   }
 
-  .about-us-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .works-section {
+    padding-top: 0;
+  }
+
+  .team-section {
     background-color: var(--about-us-color)
   }
 
-  .first-title {
+  .works-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -254,49 +254,45 @@
     margin-bottom: 50px;
   }
   
-  .first-list {
+  .works-list {
     display: flex;
   }
 
-  .first-item:not(:last-child) {
+  .works-item:not(:last-child) {
     margin-right: 30px;
-    margin-bottom: 94px;
   }
 
-  .about-list {
+  .team-list {
     display: flex;
   }
 
-  .about-item {
-    display: flex;
-  }
-
-  .about-item-container {
+  .team-item-container {
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .about-item:not(:last-child) {
+  .team-item:not(:last-child) {
     margin-right: 30px
   }
-  .about-title {
+  .team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-title-color);
-    padding-top: 30px;
+    
   }
   
-  .about-text {
+  .team-position {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-top: 10px;
-    padding-bottom: 30px;
+    margin-top: 10px;
   }
 
   /*-------------------projects------------------*/
@@ -310,13 +306,10 @@
     background-color: var(--accent-color);
   }
 
-  .filter {
+  .filter-list {
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
-  }
-
-  .filters-container {
-    margin-bottom: 50px;
   }
 
   .filter-item:not(:last-child) {
@@ -367,19 +360,17 @@
   /*------------------footer------------------*/
   
   .footer-hero {
-      background-color: var(--background-hero-footer-color);
-  }
-  
-  .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--background-hero-footer-color);
   }
   
-  .logo-footer-container {
+  .footer-logo {
+    display: block;
     margin-bottom: 20px;
   }
-
-  .footer-addres-item {
+  
+  .footer-address-link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -388,10 +379,10 @@
   }
   
   .footer-item:not(:last-child) {
-margin-bottom: 9px;
+    margin-bottom: 9px;
   }
 
-  .footer-list {
+  .footer-address-list {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
