@@ -338,10 +338,17 @@ a {
   width: 370px;
 }
 
-.project-item {
+.projects-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.projects-container {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 .projects-title {
@@ -350,8 +357,6 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-title-color);
-  margin-top: 20px;
-  margin-left: 24px;
 }
 
 .project-text {
@@ -360,8 +365,6 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
 }
 /*------------------footer------------------*/
 
